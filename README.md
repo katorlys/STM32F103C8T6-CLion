@@ -12,10 +12,10 @@
 
 
 ## 使用方法
-1. 复制`Project`文件夹
+1. 复制`Project`文件夹 (路径不能有中文)
 2. 用 CLion 打开
 3. 新建文件、修改文件名、删除文件时, 要重新加载 CMake 项目
-4. 新建文件夹时, 记得在`CMakeLists.txt`中的`include_directories(Library Start User)`和`file(GLOB_RECURSE SOURCES Library/*.*" "Start/*.*" "User/*.*")`处添加它们, 并重新加载 CMake 项目
+4. 新建文件夹时, 记得重新加载 CMake 项目
 5. 点击`构建`即可在`cmake-build-debug`文件夹中获取到编译后的文件 (`.elf`,`.bin`,`.hex`和`.map`都有)
 6. 点击`运行`即可把编译后的文件通过ST-LINK下载到STM32中, 若此前未构建则会先构建再下载
 7. 点击`调试`即可开始调试, 与 Keil MDK 一样
